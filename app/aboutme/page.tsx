@@ -1,12 +1,11 @@
 // app/about/page.tsx
 import Image from "next/image";
-import Link from "next/link"; // Imported Next.js Link for optimized page redirection
+import Link from "next/link";
 import MyPhoto from "@/public/image/picme.jpg"; 
 
 export default function AboutPage() {
   return (
     <div className="w-full max-w-6xl mx-auto px-6 md:px-12 animate-fadeIn">
-      {/* Page Header */}
       <div className="mb-10">
         <p className="text-[#FF9F43] text-xs font-bold tracking-[0.3em] uppercase mb-2">
           Background & Profile
@@ -16,10 +15,9 @@ export default function AboutPage() {
         </h1>
       </div>
 
-      {/* Grid Splits the whole widescreen monitor 7 cols left / 5 cols right */}
       <div className="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12 items-start w-full">
         
-        {/* LEFT COLUMN: Narrative Bio Block */}
+
         <div className="md:col-span-7 bg-[#1A2326]/50 backdrop-blur-md border border-white/10 rounded-2xl p-6 md:p-8 shadow-2xl space-y-6">
           <div>
             <p className="text-sm md:text-base text-[#85929E] leading-relaxed">
@@ -36,10 +34,8 @@ export default function AboutPage() {
           </p>
         </div>
 
-        {/* RIGHT COLUMN: Photo Box + Quick Profile Snapshot (Fills out the empty space) */}
         <div className="md:col-span-5 flex flex-col gap-6 w-full">
           
-          {/* PHOTO BOX: Modern, glowing image frame */}
           <div className="bg-[#1A2326]/40 backdrop-blur-md border border-white/10 rounded-2xl p-4 shadow-xl flex justify-center items-center">
             <div className="relative w-full aspect-square max-w-[260px] rounded-xl overflow-hidden border-2 border-[#FF9F43]/40 group shadow-lg">
               <Image
@@ -52,7 +48,6 @@ export default function AboutPage() {
             </div>
           </div>
 
-          {/* CREDENTIALS HUB: Clean, responsive links directory connecting your required pages */}
           <div className="bg-[#1A2326]/40 backdrop-blur-md border border-white/5 rounded-2xl p-5 shadow-xl space-y-3">
             <p className="text-[10px] font-bold text-[#FF9F43] tracking-widest uppercase border-b border-white/10 pb-2">
               Credentials Directory
