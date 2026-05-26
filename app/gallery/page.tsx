@@ -106,7 +106,6 @@ export default function GalleryPage() {
                 />
               </div>
 
-              {/* Text Info Box */}
               <div className="p-5 flex-grow flex flex-col justify-between border-t border-white/5">
                 <div>
                   <span className="text-[10px] uppercase font-bold tracking-widest text-[#FF9F43] mb-1 block">
